@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partie 6 Exercice 1</title>
+</head>
+
+<body>
+    <h1>Exercice 1</h1>
+    <p>A l'aide d'une boucle, afficher toutes les années entre 2020 et 2030. Colorer en rouge toutes les années
+        bissextiles.</p>
+
+    <button type="button" id="myButton">Generate</button>
+    <div id='myYears'>
+
+    </div>
+
+</body>
+<script>
+    myButton.addEventListener("click", function () {
+        for (i = 2000; i <= 2100; i++) {
+            let myP = document.createElement("p");
+            myP.innerText = i;
+            myYears.appendChild(myP);
+            if ((i % 4 == 0) && ((i % 100 != 0) || (i % 400 == 0))){
+                myP.style.color = "red"
+            }
+        }
+    })
+    // let text = '';
+    // let i;
+
+    // for (i = 900; i <= 2030; i++) {
+
+    //     if ((i % 4 == 0) && ((i % 100 != 0) || (i % 400 == 0))) {
+    //         text += '<p style="color:red">' + i + ' est une année bissextile </p> ';
+
+    //     } else {
+    //         text += '<p>' + i + ' n\'est pas une année bissextile </p> ';
+
+
+    //     }
+
+    //     document.getElementById('myYears').innerHTML = text;
+
+    // }
+</script>
+
+</html>
