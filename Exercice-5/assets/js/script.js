@@ -1,8 +1,8 @@
 
 
 let idList = document.getElementById("list");
-let firstNumber = 2
-let secondNumber = 4
+let firstNumber = 2;
+let secondNumber = 4;
 let n = 0;
 let idButton = document.getElementById("mybutton");
 

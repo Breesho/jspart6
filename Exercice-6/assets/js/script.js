@@ -13,7 +13,7 @@ idButton.addEventListener("click", function() {
     let myP = document.createElement("p");
     myP.innerHTML = firstNumber;
     idList.appendChild(myP);
-    firstNumber= n;
+    firstNumber = n;
 }
 
 })
